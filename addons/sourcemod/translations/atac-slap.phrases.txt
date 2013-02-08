@@ -1,0 +1,16 @@
+﻿"Phrases"
+{
+	"Slap"
+	{
+		"en"		"Slap"
+		"de"		"Schlagen"
+		"fr"		"Giffler"
+	}
+	"Slapped"
+	{
+		"#format"	"{1:N},{2:i},{3:i}"
+		"en"		"{1} has been slapped for team killing and now has {2}/{3} team kills."
+		"de"		"{1} wurde wegen Teamkills geschlagen und hat nun {2}/{3} Teamkills."
+		"fr"		"{1} a t giffl(e) pour TK et en est  {2}/{3} TKs."
+	}
+}

@@ -1,0 +1,26 @@
+﻿"Phrases"
+{
+	"Freeze"
+	{
+		"en"		"Freeze"
+	}
+	"FreezeBomb"
+	{
+		"en"		"Freezebomb"
+	}
+	"FreezeBombed"
+	{
+		"#format"	"{1:N},{2:i},{3:i}"
+		"en"		"{1} has been turned into a freezebomb for team killing and now has {2}/{3} team kills."
+	}
+	"Frozen"
+	{
+		"#format"	"{1:N},{2:i},{3:i}"
+		"en"		"{1} has been frozen for team killing and now has {2}/{3} team kills."
+	}
+	"Till Explodes"
+	{
+		"#format"	"{1:d},{2:N}"
+		"en"		"{1} seconds until {2} explodes."
+	}
+}

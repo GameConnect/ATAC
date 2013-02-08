@@ -1,0 +1,12 @@
+﻿"Phrases"
+{
+	"Drug"
+	{
+		"en"		"Drug"
+	}
+	"Drugged"
+	{
+		"#format"	"{1:N},{2:i},{3:i}"
+		"en"		"{1} has been drugged for team killing and now has {2}/{3} team kills."
+	}
+}

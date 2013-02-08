@@ -1,0 +1,16 @@
+﻿"Phrases"
+{
+	"UberSlap"
+	{
+		"en"		"Uberslap"
+		"de"		"Verdreschen"
+		"fr"		"Giffler ardemment"
+	}
+	"UberSlapped"
+	{
+		"#format"	"{1:N},{2:i},{3:i}"
+		"en"		"{1} has been uberslapped for team killing and now has {2}/{3} team kills."
+		"de"		"{1} wurde wegen Teamkills verdroschen und hat nun {2}/{3} Teamkills."
+		"fr"		"{1} a t ardemment giffl(e) pour TK et en est a {2}/{3} TKs."
+	}
+}
