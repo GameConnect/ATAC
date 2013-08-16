@@ -69,17 +69,34 @@ public Action:Timer_Drug(Handle:timer, any:client)
 	GetClientAbsOrigin(client, flPos);
 	
 	flAngles[2] = g_flDrugAngles[GetRandomInt(0, 100) % sizeof(g_flDrugAngles)];
-	
 	TeleportEntity(client, flPos, flAngles, NULL_VECTOR);
 	
+	new iDuration = 255;
+	new iHoldTime = 255;
+	new iFlags    = 0x0002;
+	new iColor[4] = {0, 0, 0, 128};
+	iColor[0]     = GetRandomInt(0, 255);
+	iColor[1]     = GetRandomInt(0, 255);
+	iColor[2]     = GetRandomInt(0, 255);
+	
 	new Handle:hMessage = StartMessageOne("Fade", client);
-	BfWriteShort(hMessage, 255);
-	BfWriteShort(hMessage, 255);
-	BfWriteShort(hMessage, (0x0002));
-	BfWriteByte(hMessage,  GetRandomInt(0, 255));
-	BfWriteByte(hMessage,  GetRandomInt(0, 255));
-	BfWriteByte(hMessage,  GetRandomInt(0, 255));
-	BfWriteByte(hMessage,  128);
+	if(GetUserMessageType() == UM_Protobuf)
+	{
+		PbSetInt(hMessage,   "duration",  iDuration);
+		PbSetInt(hMessage,   "hold_time", iHoldTime);
+		PbSetInt(hMessage,   "flags",     iFlags);
+		PbSetColor(hMessage, "clr",       iColor);
+	}
+	else
+	{
+		BfWriteShort(hMessage, iDuration);
+		BfWriteShort(hMessage, iHoldTime);
+		BfWriteShort(hMessage, iFlags);
+		BfWriteByte(hMessage,  iColor[0]);
+		BfWriteByte(hMessage,  iColor[1]);
+		BfWriteByte(hMessage,  iColor[2]);
+		BfWriteByte(hMessage,  iColor[3]);
+	}
 	EndMessage();	
 	
 	return Plugin_Continue;
