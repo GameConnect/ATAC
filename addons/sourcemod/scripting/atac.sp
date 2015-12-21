@@ -612,7 +612,7 @@ public Native_RegisterPunishment(Handle:plugin, numParams)
 	if(iPunishment == -1)
 		iPunishment = PushArrayString(g_hPunishments, sName);
 	
-	g_fPunishmentCallbacks[iPunishment] = Function:GetNativeCell(2);
+	g_fPunishmentCallbacks[iPunishment] = GetNativeCell(2);
 	g_hPunishmentPlugins[iPunishment]   = plugin;
 }
 
@@ -649,8 +649,9 @@ LoadClient(client)
 	
 	// Query local table
 	decl String:sAuth[20], String:sIp[15], String:sQuery[256];
-	GetClientAuthString(client, sAuth, sizeof(sAuth));
-	GetClientIP(client,         sIp,   sizeof(sIp));
+	//GetClientAuthString(client, sAuth, sizeof(sAuth));
+	GetClientAuthId(client, AuthId_Steam3, sAuth, sizeof(sAuth));
+	GetClientIP(client, sIp, sizeof(sIp));
 	Format(sQuery, sizeof(sQuery), "SELECT attacks, kills, kicks, bans, karma \
 																	FROM   atac \
 																	WHERE  identity = '%s' \
@@ -683,7 +684,8 @@ SaveClient(client)
 		return;
 	
 	decl String:sIdentity[20], String:sQuery[256];
-	if(!GetClientAuthString(client, sIdentity, sizeof(sIdentity)))
+	//if(!GetClientAuthString(client, sIdentity, sizeof(sIdentity)))
+	if(!GetClientAuthId(client, AuthId_Steam3, sIdentity, sizeof(sIdentity)))
 		GetClientIP(client, sIdentity, sizeof(sIdentity));
 	
 	Format(sQuery, sizeof(sQuery), "INSERT INTO atac (identity, attacks, kills, kicks, bans, karma, time) \
