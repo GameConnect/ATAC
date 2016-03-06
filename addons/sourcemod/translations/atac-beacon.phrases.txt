@@ -1,12 +1,12 @@
 ﻿"Phrases"
 {
-	"Beacon"
-	{
-		"en"		"Beacon"
-	}
-	"Beaconed"
-	{
-		"#format"	"{1:N},{2:i},{3:i}"
-		"en"		"{1} has been beaconed for team killing and now has {2}/{3} team kills."
-	}
+    "Beacon"
+    {
+        "en"		"Beacon"
+    }
+    "Beaconed"
+    {
+        "#format"	"{1:N},{2:i},{3:i}"
+        "en"		"{1} has been beaconed for team killing and now has {2}/{3} team kills."
+    }
 }

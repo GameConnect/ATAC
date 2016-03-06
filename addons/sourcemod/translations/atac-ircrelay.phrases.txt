@@ -1,84 +1,84 @@
 ﻿"Phrases"
 {
-	"IRC Ban Count"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1} has {2}/{3} bans."
-		"nl"		"{1} heeft {2}/{3} bans."
-	}
-	"IRC Karma Count"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1} has {2}/{3} karma."
-		"nl"		"{1} heeft {2}/{3} karma."
-	}
-	"IRC Kick Count"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1} has {2}/{3} kicks."
-		"nl"		"{1} heeft {2}/{3} kicks."
-	}
-	"IRC Set Bans"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1}'s bans have been set to {2}/{3}."
-		"nl"		"{1}'s aantal bans is veranderd naar {2}/{3}."
-	}
-	"IRC Set Karma"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1}'s karma has been set to {2}/{3}."
-		"nl"		"{1}'s karma is veranderd naar {2}/{3}."
-	}
-	"IRC Set Kicks"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1}'s kicks have been set to {2}/{3}."
-		"nl"		"{1}'s aantal kicks is veranderd naar {2}/{3}."
-	}
-	"IRC Set TA"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1}'s team attacks have been set to {2}/{3}."
-		"nl"		"{1}'s aantal team attacks is veranderd naar {2}/{3}."
-	}
-	"IRC Set TK"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1}'s team kills have been set to {2}/{3}."
-		"nl"		"{1}'s aantal team kills is veranderd naar {2}/{3}."
-	}
-	"IRC TA Count"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1} has {2}/{3} team attacks."
-		"nl"		"{1} heeft {2}/{3} team attacks."
-	}
-	"IRC TK Ban"
-	{
-		"#format"	"{1:s},{2:s}"
-		"en"		"{1} | {2} has been banned for too many TKs."
-		"de"		"{1} | {2} wurde wegen zu vieler Teamkills gebannt."
-		"fr"		"{1} | {2} a t banni(e) pour trop de TKs."
-		"nl"		"{1} | {2} is gebanned voor teveel teamkills."
-	}
-	"IRC TK Count"
-	{
-		"#format"	"{1:s},{2:i},{3:i}"
-		"en"		"{1} has {2}/{3} team kills."
-		"nl"		"{1} heeft {2}/{3} team kills."
-	}
-	"IRC TK Kick"
-	{
-		"#format"	"{1:s},{2:s}"
-		"en"		"{1} | {2} has been kicked for too many TKs."
-		"de"		"{1} | {2} wurde wegen zu vieler Teamkills gekickt."
-		"fr"		"{1} | {2} a t expuls(e) pour trop de TKs."
-		"nl"		"{1} | {2} is gekicked voor teveel teamkills."
-	}
-	"IRC TK Status Title"
-	{
-		"#format"	"{1:s}"
-		"en"		"{1}'s ATAC Status."
-	}
+    "IRC Ban Count"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1} has {2}/{3} bans."
+        "nl"		"{1} heeft {2}/{3} bans."
+    }
+    "IRC Karma Count"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1} has {2}/{3} karma."
+        "nl"		"{1} heeft {2}/{3} karma."
+    }
+    "IRC Kick Count"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1} has {2}/{3} kicks."
+        "nl"		"{1} heeft {2}/{3} kicks."
+    }
+    "IRC Set Bans"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1}'s bans have been set to {2}/{3}."
+        "nl"		"{1}'s aantal bans is veranderd naar {2}/{3}."
+    }
+    "IRC Set Karma"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1}'s karma has been set to {2}/{3}."
+        "nl"		"{1}'s karma is veranderd naar {2}/{3}."
+    }
+    "IRC Set Kicks"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1}'s kicks have been set to {2}/{3}."
+        "nl"		"{1}'s aantal kicks is veranderd naar {2}/{3}."
+    }
+    "IRC Set TA"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1}'s team attacks have been set to {2}/{3}."
+        "nl"		"{1}'s aantal team attacks is veranderd naar {2}/{3}."
+    }
+    "IRC Set TK"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1}'s team kills have been set to {2}/{3}."
+        "nl"		"{1}'s aantal team kills is veranderd naar {2}/{3}."
+    }
+    "IRC TA Count"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1} has {2}/{3} team attacks."
+        "nl"		"{1} heeft {2}/{3} team attacks."
+    }
+    "IRC TK Ban"
+    {
+        "#format"	"{1:s},{2:s}"
+        "en"		"{1} | {2} has been banned for too many TKs."
+        "de"		"{1} | {2} wurde wegen zu vieler Teamkills gebannt."
+        "fr"		"{1} | {2} a t banni(e) pour trop de TKs."
+        "nl"		"{1} | {2} is gebanned voor teveel teamkills."
+    }
+    "IRC TK Count"
+    {
+        "#format"	"{1:s},{2:i},{3:i}"
+        "en"		"{1} has {2}/{3} team kills."
+        "nl"		"{1} heeft {2}/{3} team kills."
+    }
+    "IRC TK Kick"
+    {
+        "#format"	"{1:s},{2:s}"
+        "en"		"{1} | {2} has been kicked for too many TKs."
+        "de"		"{1} | {2} wurde wegen zu vieler Teamkills gekickt."
+        "fr"		"{1} | {2} a t expuls(e) pour trop de TKs."
+        "nl"		"{1} | {2} is gekicked voor teveel teamkills."
+    }
+    "IRC TK Status Title"
+    {
+        "#format"	"{1:s}"
+        "en"		"{1}'s ATAC Status."
+    }
 }

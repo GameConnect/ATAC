@@ -1,0 +1,36 @@
+sudo: false
+language: c
+
+addons:
+    apt_packages:
+        - lib32stdc++6
+
+env:
+    - SOURCEMOD=1.7
+    - SOURCEMOD=1.8
+
+before_script:
+    - mkdir build && cd build
+    - wget "http://www.sourcemod.net/latest.php?version=$SOURCEMOD&os=linux" -O sourcemod-$SOURCEMOD-linux.tar.gz
+    - tar -xzf sourcemod-$SOURCEMOD-linux.tar.gz
+    - cd addons/sourcemod/scripting
+    - chmod +x spcomp
+    - cp -R $TRAVIS_BUILD_DIR/addons/sourcemod/scripting/* .
+    - wget "https://github.com/GameConnect/IRCRelay/raw/master/addons/sourcemod/scripting/include/ircrelay.inc" -O include/ircrelay.inc
+
+script: ./compile.sh atac.sp atac-beacon.sp atac-blind.sp atac-css.sp atac-dods.sp atac-drug.sp atac-fire.sp atac-freeze.sp atac-ins.sp atac-ircrelay.sp atac-slap.sp atac-slay.sp atac-timebomb.sp atac-uberslap.sp
+
+before_deploy:
+    - cp -R compiled/* $TRAVIS_BUILD_DIR/addons/sourcemod/plugins/
+    - cd $TRAVIS_BUILD_DIR
+    - tar -czf release.tar.gz addons/
+
+deploy:
+    provider: releases
+    api_key:
+        secure: AV2KA95YZ9HLZExkSxZavQGptQMKUNwu6bgALbEor4Pevnbnvq+XjMemfRBKTz0NjRwtREKlllW0b6Ppj0iTx1a5BWTHjuK73n2oUOfKuhQDc1N5ycnoT38hzqlk3s5u870YOTzxCVrzGfnw+ujs+hVBmdyuSmHr2yWPkIN9DJ8=
+    file: release.tar.gz
+    skip_cleanup: true
+    on:
+        tags: true
+        condition: $SOURCEMOD = 1.7
