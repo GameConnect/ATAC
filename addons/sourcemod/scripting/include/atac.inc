@@ -11,7 +11,7 @@
 #define STEAM_BAN_TYPE	0
 #define IP_BAN_TYPE			1
 
-#define ATAC_VERSION		"2.5.1"
+#define ATAC_VERSION		"2.5.2"
 
 enum AtacInfo
 {

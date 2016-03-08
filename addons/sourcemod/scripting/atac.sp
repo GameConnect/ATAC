@@ -81,7 +81,7 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
 public void OnPluginStart()
 {
     // Create convars
-    CreateConVar("atac_version", ATAC_VERSION, "Advanced Team Attack Control: Source");
+    CreateConVar("atac_version", ATAC_VERSION, "Advanced Team Attack Control: Source", FCVAR_NOTIFY);
     g_hAttacksLimit     = CreateConVar("atac_attacks_limit",     "10", "ATAC Attacks Limit");
     g_hBansLimit        = CreateConVar("atac_bans_limit",        "3",  "ATAC Bans Limit");
     g_hBanTime          = CreateConVar("atac_ban_time",          "60", "ATAC Ban Time");
