@@ -11,7 +11,7 @@
 #define STEAM_BAN_TYPE	0
 #define IP_BAN_TYPE			1
 
-#define ATAC_VERSION		"2.5.2"
+#define ATAC_VERSION		"2.5.3"
 
 enum AtacInfo
 {
@@ -47,7 +47,7 @@ typedef AtacPunishment = function void (int victim, int attacker);
  * @param	 type		AtacInfo type
  * @return Value of client's information type
  */
-native any ATAC_GetInfo(client, AtacInfo type);
+native any ATAC_GetInfo(int client, AtacInfo type);
 
 /**
  * Retrieves a setting's value

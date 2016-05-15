@@ -124,7 +124,7 @@ public void OnPluginStart()
     RegConsoleCmd("sm_tkstatus",  Command_TKStatus,  "ATAC TK Status");
 
     // Create arrays and tries
-    g_hPunishments = new ArrayList(64);
+    g_hPunishments = new ArrayList(ByteCountToCells(64));
 
     // Store mod
     char sBuffer[65];
